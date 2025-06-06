@@ -1,47 +1,53 @@
+
 body {
+  background: #111;
+  color: white;
+  font-family: sans-serif;
   margin: 0;
-  font-family: 'Courier New', monospace;
-  background-color: #000;
-  color: #0f0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
+  padding: 0;
 }
 
-.container {
+#eid-gallery {
+  padding: 40px;
   text-align: center;
-  max-width: 90%;
 }
 
-.highlight {
-  color: cyan;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
 }
 
-.chat-box {
-  margin-top: 20px;
+.gallery-card {
+  background: #1b1b1b;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.1);
+  text-align: center;
 }
 
-input, button {
-  padding: 10px;
-  margin: 5px;
-  font-size: 1em;
-  border-radius: 8px;
-  border: none;
+.gallery-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
 }
 
-input {
-  width: 60%;
+.gallery-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
-button {
-  background-color: #0f0;
+.download-btn {
+  display: inline-block;
+  background: #ffcc00;
   color: #000;
-  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
 }
-
-#responseBox {
-  margin-top: 20px;
-  color: #0ff;
+.download-btn:hover {
+  background: #e6b800;
 }
